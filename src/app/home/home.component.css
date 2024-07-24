@@ -1,0 +1,12 @@
+nav {background-color:black;color:red;}
+h2 {color:green;}
+.head {color:red; text-decoration:none; overflow:hidden; display:inline-block; width:auto}
+.head .tabs {padding:8px 16px; float:right!important; width:auto; border:none; 
+	display:block; outline:0; color:red; white-space:nowrap}
+h1 {color:red; text-align:left;}
+.tabs:hover {background-color:grey}
+body {color:white; text-align:left;}
+.bod {margin:32px; padding:8px 16px}
+.top, .bottom {position:fixed; width:100%; z-index:1}.top{top:0} .bottom{bottom:0}
+.right {float:right!important}
+.black {background-color:black}

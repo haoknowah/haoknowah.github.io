@@ -1,0 +1,86 @@
+.cs {
+    background-color: white;
+    display: grid;
+}
+.row {
+    background-color: white;
+    width: auto;
+    display:flex;
+    margin:auto;
+}
+.row .entry {
+    border: 1px;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    width: auto;
+    text-align: center;
+    font-size: large;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+}
+.row .entryleft {
+    border: 1px;
+    background-color: white;
+    border-right: 0px;
+    border-color: black;
+    border-style: solid;
+    width: auto;
+    text-align: center;
+    font-size: large;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+}
+.row .entryright {
+    border: 1px;
+    border-left: 0px;
+    border-color: black;
+    border-style: solid;
+    width: auto;
+    text-align: center;
+    font-size: large;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+}
+.attributes {
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    position: relative;
+    width: 20vw;
+}
+.skills {
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    width: 20vw;
+    margin: auto;
+    position: relative;
+    float: right;
+}
+.skills .name {
+    text-align: center;
+    color: red;
+}
+.skills .rank {
+    text-align: center;
+    margin: auto;
+    color: blue;
+}
+.equipment {
+    border: 1px;
+}
+.job {
+
+}
+#wrapper {
+    display: flex; 
+    width: 100%;
+}
+#wrapper > div {
+    flex-grow: 1;
+}
