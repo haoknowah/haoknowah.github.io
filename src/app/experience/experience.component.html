@@ -48,9 +48,11 @@
 
         </div>
         <table mat-table [dataSource]="dataSource" class="skills">
-            <ng-container matColumnDef="Skill">
+            <ng-container matColumnDef="Skill" style = "border-right: 1px;
+            border-style: solid; border-color: black;">
                 <th mat-header-cell *matHeaderCellDef><strong>Skill</strong></th>
-                <td mat-cell *matCellDef="let element">{{element.name}}</td>
+                <td mat-cell *matCellDef="let element" style = 
+                "border-right: 1px; border-color: black; border-style: solid;">{{element.name}}</td>
             </ng-container>
             <ng-container matColumnDef="Years of Experience">
                 <th mat-header-cell *matHeaderCellDef><strong>Years of Experience</strong></th>
