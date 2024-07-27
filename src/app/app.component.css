@@ -1,6 +1,6 @@
 nav {background-color:black;color:red; overflow: hidden; width: 100%; top: 0}
 h2 {color:green;}
-.head {color:red; text-decoration:none; overflow:hidden; display:inline-block; width:auto}
+.head {color:red; position:fixed; overflow:hidden; display:inline-block; width:auto; z-index: 51;}
 .head .tabs {padding:8px 16px; float:right!important; width:auto; border:none; 
 	display:block; outline:0; color:red; white-space:nowrap}
 h1 {color:red; text-align:left;}
@@ -13,10 +13,11 @@ body {background-color:grey; text-align:left;
 }
 .bod {margin: 0 0 0; padding: 0 0 0;
 	left: 0;
-	position: fixed;
+	position: relative;
 	background-color: grey;
 	width: 100vw;
 	min-height: 100vh;
+	z-index: 5;
 }
 .navbar {background-color:black;color:red; margin: 0; overflow: hidden; width: 100%; top: 0}
 .top, .bottom {position:fixed; width:100%; z-index:1}.top{top:0} .bottom{bottom:0}

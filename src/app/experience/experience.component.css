@@ -1,6 +1,8 @@
 .cs {
     background-color: white;
     display: grid;
+    width: 98vw;
+    margin-top: 10px;
 }
 .row {
     background-color: white;
