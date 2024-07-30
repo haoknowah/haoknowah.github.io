@@ -48,33 +48,24 @@
 
         </div>
         <table mat-table [dataSource]="dataSource" class="skills">
-            <ng-container matColumnDef="Skill" style = "border-right: 1px;
-            border-style: solid; border-color: black;">
-                <th mat-header-cell *matHeaderCellDef><strong>Skill</strong></th>
-                <td mat-cell *matCellDef="let element" style = 
-                "border-right: 1px; border-color: black; border-style: solid;">{{element.name}}</td>
+            <ng-container matColumnDef="Skill">
+                <th mat-header-cell *matHeaderCellDef class = "name">
+                    <strong>Skill</strong>
+                </th>
+                <td mat-cell *matCellDef="let element" class = "name">
+                {{element.name}}</td>
             </ng-container>
             <ng-container matColumnDef="Years of Experience">
-                <th mat-header-cell *matHeaderCellDef><strong>Years of Experience</strong></th>
-                <td mat-cell *matCellDef="let element">{{element.exp}}</td>
+                <th mat-header-cell *matHeaderCellDef class = "rank">
+                    <strong>Years</strong>
+                </th>
+                <td mat-cell *matCellDef="let element" class = "rank">
+                    {{element.exp}}
+                </td>
             </ng-container>
             <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
             <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
         </table>
-        <div class="skills">
-            <div class="row" id="wrapper" style="border-top: 2px;">
-                <div class="entry" id="skills">
-                    <label for="skills"><strong>Skills</strong></label>
-                </div>
-                <div class="entry"><strong>Years of Experience</strong></div>
-            </div>
-            <div class="row" style="margin: auto;" id="wrapper">
-                <div class="entry" id="Java">
-                    <label for="Java" class="name"><strong>Java</strong></label>
-                    <div class="rank">3</div>
-                </div>
-            </div>
-        </div>
         <div class="job">
             <div class="row">
                 <label for="Programmer"><strong>Programmer</strong></label>

@@ -62,16 +62,24 @@
     width: 20vw;
     margin: auto;
     position: relative;
+    display: flex;
+    justify-content: flex-end;
     float: right;
 }
 .skills .name {
     text-align: center;
-    color: red;
+    margin: auto;
+    border-left: 1px;
+    border-right: 1px;
+    border-style: solid;
+    border-color: black;
 }
 .skills .rank {
     text-align: center;
     margin: auto;
-    color: blue;
+    border-right: 1px;
+    border-color: black;
+    border-style: solid;
 }
 .equipment {
     border: 1px;
