@@ -1,7 +1,7 @@
 .cs {
     background-color: white;
     display: grid;
-    width: 98vw;
+    width: 97vw;
     margin-top: 10px;
 }
 .row {
@@ -59,11 +59,9 @@
     border: 1px;
     border-color: black;
     border-style: solid;
-    width: 20vw;
     margin: auto;
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
+    display: grid;
+    min-width: 20vw;
     float: right;
 }
 .skills .name {
@@ -85,7 +83,7 @@
     border: 1px;
 }
 .job {
-
+    margin: auto;
 }
 #wrapper {
     display: flex; 
@@ -93,4 +91,8 @@
 }
 #wrapper > div {
     flex-grow: 1;
+}
+#skills {
+    display: table;
+    float: right;
 }

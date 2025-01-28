@@ -44,10 +44,7 @@
         </div>
     </div>
     <div>
-        <div class="attributes" id="wrapper">
-
-        </div>
-        <table mat-table [dataSource]="dataSource" class="skills">
+        <table mat-table [dataSource]="dataSource" id = "skills" class = "skills">
             <ng-container matColumnDef="Skill">
                 <th mat-header-cell *matHeaderCellDef class = "name">
                     <strong>Skill</strong>
@@ -68,8 +65,15 @@
         </table>
         <div class="job">
             <div class="row">
-                <label for="Programmer"><strong>Programmer</strong></label>
+                <div class = "entry" style = "margin-left: 0%;">
+                    <label for="job"><strong>Job: </strong></label>
+                    <div style = "text-align: center;
+                    margin: auto; margin-left: 5px;">Programmer LVL 3/ Customer Service
+                        Representitive LVL 4
+                    </div>
+                </div>
             </div>
         </div>
+        <app-feats></app-feats>
     </div>
 </div>

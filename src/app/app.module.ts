@@ -10,6 +10,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MatTableModule } from '@angular/material/table';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { TestComponent } from './test/test.component';
+import { FeatsComponent } from './feats/feats.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +20,15 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     ExperienceComponent,
     LinksComponent,
     AboutMeComponent,
-    NavbarComponent
+    NavbarComponent, 
+    TestComponent,
+    FeatsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatTableModule,
-    ScrollingModule
+    ScrollingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

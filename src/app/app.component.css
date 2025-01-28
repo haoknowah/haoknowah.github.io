@@ -11,12 +11,10 @@ body {background-color:grey; text-align:left;
 	width: 100vw;
 	min-height: 100vh;
 }
-.bod {margin: 0 0 0; padding: 0 0 0;
+.bod {
 	left: 0;
 	position: relative;
 	background-color: grey;
-	width: 100vw;
-	min-height: 100vh;
 	z-index: 5;
 }
 .navbar {background-color:black;color:red; margin: 0; overflow: hidden; width: 100%; top: 0}
