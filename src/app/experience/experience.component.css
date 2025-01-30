@@ -48,13 +48,6 @@
     margin-bottom: auto;
     display: flex;
 }
-.attributes {
-    border: 1px;
-    border-color: black;
-    border-style: solid;
-    position: relative;
-    width: 20vw;
-}
 .skills {
     border: 1px;
     border-color: black;
@@ -84,6 +77,20 @@
 }
 .job {
     margin: auto;
+}
+.attributes {
+    margin: auto;
+    position: relative;
+    display: grid;
+}
+.attributes .attribute {
+    font-size: large;
+    text-align: center;
+    position: relative;
+}
+.attributes .value {
+    text-align: center;
+    position: relative;
 }
 #wrapper {
     display: flex; 

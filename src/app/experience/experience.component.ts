@@ -6,6 +6,11 @@ export interface Skill
   name: string;
   exp: number;
 }
+export interface Attribute
+{
+  name: string;
+  value: number;
+}
 const SKILL: Skill[] = [
   {name: 'Java', exp: 3},
   {name: 'Angular', exp: 1},
@@ -27,6 +32,13 @@ const SKILL: Skill[] = [
 export class ExperienceComponent implements OnInit {
   displayedColumns: string[] = ['Skill', 'Years of Experience'];
   dataSource = SKILL;
+  attributes: Attribute[] = [
+    {name: 'Strength', value: 14},
+    {name: 'Dexterity', value: 14},
+    {name: 'Constitution', value: 14},
+    {name: 'Intelligence', value: 16},
+    {name: 'Wisdom', value: 12}
+  ];
   constructor() { }
 
   ngOnInit(): void {

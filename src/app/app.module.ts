@@ -12,6 +12,7 @@ import { MatTableModule } from '@angular/material/table';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { TestComponent } from './test/test.component';
 import { FeatsComponent } from './feats/feats.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { FeatsComponent } from './feats/feats.component';
     AppRoutingModule,
     MatTableModule,
     ScrollingModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
