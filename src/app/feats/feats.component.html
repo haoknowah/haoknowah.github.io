@@ -1,4 +1,12 @@
 <div style = "border: 1px; border-color: black; border-style: solid; 
-max-width: 30vw; max-height: 40vh; overflow-y: scroll;">
-
+max-width: 30vw; max-height: 40vh; margin-left: 4px;">
+    <div style = "margin-left: 4px;">
+        <h1>Job Abilities</h1>
+        /change to fake table to create more compact list
+        @for (feat of feats; track feat)
+        {
+            <div class = "feat">{{feat.name}}</div>
+            <div class = "hide">{{feat.description}}</div>
+        }
+    </div>
 </div>

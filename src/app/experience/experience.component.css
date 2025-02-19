@@ -74,6 +74,10 @@
 }
 .equipment {
     border: 1px;
+    border-color: black;
+    border-style: solid;
+    margin: auto;
+    text-align: center;
 }
 .job {
     margin: auto;
@@ -82,15 +86,42 @@
     margin: auto;
     position: relative;
     display: grid;
+    min-width: none;
+    max-width: 20vw;
+    min-height: none;
+    max-height: 50vh;
 }
 .attributes .attribute {
     font-size: large;
     text-align: center;
-    position: relative;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    margin: auto;
 }
 .attributes .value {
     text-align: center;
-    position: relative;
+    margin: auto;
+    max-width: 30px;
+}
+.education {
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    min-width: 40vw;
+    max-width: 40vw;
+}
+.leftColumn {
+    min-width: 30vw;
+    max-width: 30vw;
+    margin: auto;
+    float: left;
+}
+.centerColumn {
+    min-width: 40vw;
+    max-width: 40vw;
+    margin: none;
+    margin-left: 30vw;
 }
 #wrapper {
     display: flex; 

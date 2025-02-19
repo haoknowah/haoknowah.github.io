@@ -44,25 +44,27 @@
         </div>
     </div>
     <div>
-        <table mat-table [dataSource]="dataSource" id = "skills" class = "skills">
-            <ng-container matColumnDef="Skill">
-                <th mat-header-cell *matHeaderCellDef class = "name">
-                    <strong>Skill</strong>
-                </th>
-                <td mat-cell *matCellDef="let element" class = "name">
-                {{element.name}}</td>
-            </ng-container>
-            <ng-container matColumnDef="Years of Experience">
-                <th mat-header-cell *matHeaderCellDef class = "rank">
-                    <strong>Years</strong>
-                </th>
-                <td mat-cell *matCellDef="let element" class = "rank">
-                    {{element.exp}}
-                </td>
-            </ng-container>
-            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-        </table>
+        <div class = "rightColumn">
+            <table mat-table [dataSource]="dataSource" id = "skills" class = "skills">
+                <ng-container matColumnDef="Skill">
+                    <th mat-header-cell *matHeaderCellDef class = "name">
+                        <strong>Skill</strong>
+                    </th>
+                    <td mat-cell *matCellDef="let element" class = "name">
+                    {{element.name}}</td>
+                </ng-container>
+                <ng-container matColumnDef="Years of Experience">
+                    <th mat-header-cell *matHeaderCellDef class = "rank">
+                        <strong>Years</strong>
+                    </th>
+                    <td mat-cell *matCellDef="let element" class = "rank">
+                        {{element.exp}}
+                    </td>
+                </ng-container>
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+        </div>
         <div class="job">
             <div class="row">
                 <div class = "entry" style = "margin-left: 0%;">
@@ -74,18 +76,27 @@
                 </div>
             </div>
         </div>
-        <div for="Equipment">
-            
+        <br>
+        <div class = "leftColumn">
+            <mat-grid-list cols = 2 for="Attributes" class = "attributes"
+            [rowHeight]="30">
+            @for (attribute of attributes; track attribute)
+            {
+                    <mat-grid-tile class = "attribute"><strong>{{attribute.name}}</strong></mat-grid-tile>
+                    <mat-grid-tile class = "value">{{attribute.value}}</mat-grid-tile>
+            }
+            </mat-grid-list>
         </div>
-        <mat-grid-list cols = 2 for="Attributes" class = "attributes">
-           @for (attribute of attributes; track attribute)
-           {
-                <mat-grid-tile class = "attribute"><strong>{{attribute.name}}</strong></mat-grid-tile>
-                <mat-grid-tile class = "value">{{attribute.value}}</mat-grid-tile>
-           }
-        </mat-grid-list>
-        <div for="Education">
-            
+        <div class = "centerColumn">
+            <div for="Equipment" class = "equipment">
+                <h3>Equipment</h3>
+                <p>computer, external hard drive, PS5, I-Phone</p>
+            </div>
+            <br>
+            <div for="Education" class = "education" style = "text-align: center;">
+                <h3>Education</h3>
+                <p>Bachelor's Degree in Computer Science</p>
+            </div>
         </div>
         <app-feats></app-feats>
     </div>
