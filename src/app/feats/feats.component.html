@@ -1,12 +1,12 @@
 <div style = "border: 1px; border-color: black; border-style: solid; 
-max-width: 30vw; max-height: 40vh; margin-left: 4px;">
+max-width: 30vw; max-height: 40vh; margin-left: 4px; margin-right: 4px;">
     <div style = "margin-left: 4px;">
         <h1>Job Abilities</h1>
-        /change to fake table to create more compact list
-        @for (feat of feats; track feat)
-        {
-            <div class = "feat">{{feat.name}}</div>
+        <div class = "feats" ng-controller = "feats">
+        <span *ngFor = "let feat of feats; let last = last;">
+            <span class = "feat">{{feat.name}}</span>
             <div class = "hide">{{feat.description}}</div>
-        }
+            <span *ngIf = "!last">, </span>
+        </span>
     </div>
 </div>

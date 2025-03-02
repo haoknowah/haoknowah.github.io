@@ -2,6 +2,12 @@
 {
     display: none;
 }
+#feats
+{
+    display: inline;
+    list-style: none;
+    margin: none;
+}
 .feat:hover + .hide
 {
     display: block;

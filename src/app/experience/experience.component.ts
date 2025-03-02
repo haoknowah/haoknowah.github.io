@@ -42,6 +42,7 @@ export class ExperienceComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.dataSource.sort((a, b) => a.name.localeCompare(b.name));
   }
 
 }
