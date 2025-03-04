@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {MatTableModule} from '@angular/material/table';
 
 export interface Skill
 {
@@ -9,7 +8,7 @@ export interface Skill
 export interface Attribute
 {
   name: string;
-  value: number;
+  value: string;
 }
 const SKILL: Skill[] = [
   {name: 'Java', exp: 3},
@@ -33,11 +32,11 @@ export class ExperienceComponent implements OnInit {
   displayedColumns: string[] = ['Skill', 'Years of Experience'];
   dataSource = SKILL;
   attributes: Attribute[] = [
-    {name: 'Strength', value: 14},
-    {name: 'Dexterity', value: 14},
-    {name: 'Constitution', value: 14},
-    {name: 'Intelligence', value: 16},
-    {name: 'Wisdom', value: 12}
+    {name: 'Hard Work', value: '5/5'},
+    {name: 'Problem Solving', value: '4/5'},
+    {name: 'Dependability', value: '5/5'},
+    {name: 'Obedience', value: '5/5'},
+    {name: 'Humor', value: '4/5'}
   ];
   constructor() { }
 
