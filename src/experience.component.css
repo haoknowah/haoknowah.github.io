@@ -1,0 +1,144 @@
+.cs {
+    background-color: white;
+    display: grid;
+    width: 97vw;
+    margin-top: 10px;
+}
+.row {
+    background-color: white;
+    width: auto;
+    display:flex;
+    margin:auto;
+}
+.row .entry {
+    border: 1px;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    width: auto;
+    text-align: center;
+    font-size: large;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+}
+.row .entryleft {
+    border: 1px;
+    background-color: white;
+    border-right: 0px;
+    border-color: black;
+    border-style: solid;
+    width: auto;
+    text-align: center;
+    font-size: large;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+}
+.row .entryright {
+    border: 1px;
+    border-left: 0px;
+    border-color: black;
+    border-style: solid;
+    width: auto;
+    text-align: center;
+    font-size: large;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+}
+.skills {
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    margin: auto;
+    display: grid;
+    min-width: 20vw;
+    float: right;
+    margin-top: 4px;
+}
+.skills .name {
+    text-align: center;
+    margin: auto;
+    border-left: 1px;
+    border-right: 1px;
+    border-style: solid;
+    border-color: black;
+}
+.skills .rank {
+    text-align: center;
+    margin: auto;
+    border-right: 1px;
+    border-color: black;
+    border-style: solid;
+}
+.equipment {
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    margin: auto;
+    text-align: center;
+}
+.job {
+    margin: auto;
+}
+.attributes {
+    margin: auto;
+    position: relative;
+    display: grid;
+    min-width: none;
+    max-width: 20vw;
+    min-height: none;
+    max-height: 50vh;
+}
+.attributes .attribute {
+    font-size: large;
+    text-align: center;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    margin: auto;
+}
+.attributes .value {
+    text-align: center;
+    margin: auto;
+    max-width: 30px;
+}
+.education {
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    min-width: 40vw;
+    max-width: 40vw;
+}
+.leftColumn {
+    min-width: 30vw;
+    max-width: 30vw;
+    margin: auto;
+    float: left;
+}
+.centerColumn {
+    min-width: 40vw;
+    max-width: 40vw;
+    margin: none;
+    margin-left: 30vw;
+}
+.rightColumn {
+    min-width: 30vw;
+    max-width: 30vw;
+    margin: auto;
+    float: right;
+    display: block;
+}
+#wrapper {
+    display: flex; 
+    width: 100%;
+}
+#wrapper > div {
+    flex-grow: 1;
+}
+#skills {
+    display: table;
+    float: right;
+}
