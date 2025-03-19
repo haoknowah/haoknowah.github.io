@@ -7,10 +7,10 @@ body {color:white; text-align:left;}
 .bod {margin:32px; padding:8px 16px}
 .navbar {background-color:black;color:red; margin: 0; overflow: hidden; width: 100%; top: 0; position: fixed; left: 0;
 	display: grid;
+	height: 110px;
 	grid-template-areas: 
 	'home nav';
 }
-.top, .bottom {position:fixed; width:100%; z-index:1}.top{top:0} .bottom{bottom:0}
 .right {float:right!important}
 .black {background-color:black}
 .navbar a {
