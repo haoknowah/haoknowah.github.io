@@ -7,7 +7,8 @@ body {color:white; text-align:left;}
 .bod {margin:32px; padding:8px 16px}
 .navbar {background-color:black;color:red; margin: 0; overflow: hidden; width: 100%; top: 0; position: fixed; left: 0;
 	display: grid;
-	height: 110px;
+	height: auto;
+	min-height: 110px;
 	grid-template-areas: 
 	'home nav';
 }

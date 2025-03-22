@@ -7,7 +7,7 @@ h2 {color:green;}
 	'body';
 }
 .head {color:red; overflow:hidden; display:inline-block; width:auto;
-	grid-area: header; height: 130px;}
+	grid-area: header; height: auto; min-height: 110px;}
 .head .tabs {padding:8px 16px; float:right!important; width:auto; border:none; 
 	display:block; outline:0; color:red; white-space:nowrap}
 h1 {color:red; text-align:left;}
