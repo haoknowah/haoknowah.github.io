@@ -1,6 +1,6 @@
 nav {background-color:black;color:red; overflow: hidden; width: 100%; top: 0; margin:0; }
 h2 {color:green;}
-.head {color:red; text-decoration:none; overflow:hidden; display:inline-block; width:auto; text-align: center; grid-area: home;}
+.head {color:red; text-decoration:none; overflow:hidden; display:block; width:auto; text-align: center; grid-area: home;}
 h1 {color:red; text-align:left;}
 .tabs:hover {background-color:grey}
 body {color:white; text-align:left;}

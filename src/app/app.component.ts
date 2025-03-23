@@ -8,13 +8,13 @@ import { NavbarComponent } from './navbar/navbar.component';
 })
 export class AppComponent implements AfterViewInit {
 
-  @ViewChild('nav', {read:NavbarComponent, static:false}) nav !: NavbarComponent;
+  @ViewChild('nav', {read:ElementRef, static:false}) nav !: ElementRef;
   constructor()
   {
     
   }
   ngAfterViewInit(): void {
-    console.log(this.nav.num);
+    console.log(this.nav.nativeElement.offsetHeight);
     console.log(5);
   }
   title = 'Noah Gaston';

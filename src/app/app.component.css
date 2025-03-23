@@ -6,7 +6,7 @@ h2 {color:green;}
 	'header'
 	'body';
 }
-.head {color:red; overflow:hidden; display:inline-block; width:auto;
+.head {color:red; overflow:hidden; display:block; width:auto;
 	grid-area: header; height: auto; min-height: 110px;}
 .head .tabs {padding:8px 16px; float:right!important; width:auto; border:none; 
 	display:block; outline:0; color:red; white-space:nowrap}
@@ -20,8 +20,6 @@ body {background-color:grey; text-align:left;
 }
 .bod {
 	left: 0;
-	position: relative;
-	height: 100%;
 	margin-left: 15px;
 	background-color: grey;
 	grid-area: body;
