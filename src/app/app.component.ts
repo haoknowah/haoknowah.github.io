@@ -1,5 +1,4 @@
-import { AfterViewInit, Component, ViewChild, ElementRef } from '@angular/core';
-import { NavbarComponent } from './navbar/navbar.component';
+import { AfterViewInit, Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,14 +7,11 @@ import { NavbarComponent } from './navbar/navbar.component';
 })
 export class AppComponent implements AfterViewInit {
 
-  @ViewChild('nav', {read:ElementRef, static:false}) nav !: ElementRef;
   constructor()
   {
     
   }
   ngAfterViewInit(): void {
-    console.log(this.nav.nativeElement.offsetHeight);
-    console.log(5);
   }
   title = 'Noah Gaston';
   num: number = 0;

@@ -1,11 +1,11 @@
 nav {background-color:black;color:red; overflow: hidden; width: 100%; top: 0; margin:0; }
 h2 {color:green;}
-.head {color:red; text-decoration:none; overflow:hidden; display:block; width:auto; text-align: center; grid-area: home;}
+.head {color:red; text-decoration:none; position: sticky; overflow:hidden; display:block; width:auto; text-align: center; top:0; grid-area: home;}
 h1 {color:red; text-align:left;}
 .tabs:hover {background-color:grey}
 body {color:white; text-align:left;}
 .bod {margin:32px; padding:8px 16px}
-.navbar {background-color:black;color:red; margin: 0; overflow: hidden; width: 100%; top: 0; position: fixed; left: 0;
+.navbar {background-color:black;color:red; margin: 0; overflow: hidden; width: 100%; top: 0; position: sticky; left: 0;
 	display: grid;
 	height: auto;
 	min-height: 110px;
@@ -16,6 +16,8 @@ body {color:white; text-align:left;}
 .black {background-color:black}
 .navbar a {
 	float: left;
+	position: sticky;
+	top: 0;
 	display: block;
 	color: red;
 	text-align: center;
@@ -25,6 +27,8 @@ body {color:white; text-align:left;}
   }
   .navbar .head {
 	float: left;
+	top: 0;
+	position: sticky;
 	display: block;
 	color: red;
 	text-align: center;
@@ -37,5 +41,7 @@ body {color:white; text-align:left;}
     margin:0;
 }
 .nav {
+	display: block;
+	position: sticky;
 	grid-area: nav;
 }
