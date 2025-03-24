@@ -112,24 +112,25 @@
     min-width: 40vw;
     max-width: 40vw;
 }
+.meow {
+    display: grid;
+    grid-template-areas: 
+    'left center right';
+}
 .leftColumn {
-    min-width: 30vw;
-    max-width: 30vw;
-    margin: auto;
-    float: left;
+    margin: none;
+    grid-area: left;
 }
 .centerColumn {
-    min-width: 40vw;
-    max-width: 40vw;
+
     margin: none;
-    margin-left: 30vw;
+    grid-area: center;
 }
 .rightColumn {
-    min-width: 30vw;
-    max-width: 30vw;
+
     margin: auto;
-    float: right;
     display: block;
+    grid-area: right;
 }
 #wrapper {
     display: flex; 

@@ -39,7 +39,7 @@
             <div style="text-align: center; margin: auto;">haoknowah</div>
         </div>
     </div>
-    <div>
+    <div class = "meow">
         <div class = "rightColumn">
             <table mat-table [dataSource]="dataSource" id = "skills" class = "skills">
                 <ng-container matColumnDef="Skill">
@@ -61,19 +61,18 @@
                 <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
             </table>
         </div>
-        <div class="job">
-            <div class="row">
-                <div class = "entry" style = "margin-left: 0%;">
-                    <label for="job"><strong>Job: </strong></label>
-                    <div style = "text-align: center;
-                    margin: auto; margin-left: 5px;">Programmer LVL 3/ Customer Service
-                        Representitive LVL 4
+        <div class = "leftColumn">
+            <div class="job">
+                <div class="row">
+                    <div class = "entry" style = "margin-left: 0%;">
+                        <label for="job"><strong>Job: </strong></label>
+                        <div style = "text-align: center;
+                        margin: auto; margin-left: 5px;">Programmer LVL 3/ Customer Service
+                            Representitive LVL 4
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <br>
-        <div class = "leftColumn">
             <mat-grid-list cols = 2 for="Attributes" class = "attributes"
             [rowHeight]="30">
             @for (attribute of attributes; track attribute)
