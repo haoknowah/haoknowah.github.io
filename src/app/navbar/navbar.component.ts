@@ -11,7 +11,6 @@ export class NavbarComponent implements OnInit, AfterViewInit{
 
   constructor(private el: ElementRef) { }
   ngAfterViewInit(): void {
-    console.log(this.el.nativeElement.offsetHeight);
   }
 
   ngOnInit(): void {
