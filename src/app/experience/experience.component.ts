@@ -39,9 +39,11 @@ export class ExperienceComponent implements OnInit {
     {name: 'Humor', value: '4/5'}
   ];
   constructor() { }
-
+  age: number = 0;
   ngOnInit(): void {
     this.dataSource.sort((a, b) => a.name.localeCompare(b.name));
+    var birth = new Date("1997-08-06");
+    this.age = Math.floor((new Date().getTime() - birth.getTime())/(3.154 * (10 ** 10)));
   }
 
 }

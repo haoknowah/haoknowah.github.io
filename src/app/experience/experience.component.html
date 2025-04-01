@@ -6,7 +6,7 @@
         </div>
         <div class="entryleft" id="age">
             <label for="age"><strong>Age: </strong></label>
-            <div style="text-align: center; margin: auto;">25</div>
+            <div style="text-align: center; margin: auto;">{{age}}</div>
         </div>
         <div class="entry" id="race">
             <label for="race"><strong>Race: </strong></label>
@@ -73,6 +73,7 @@
                     </div>
                 </div>
             </div>
+            <br>
             <mat-grid-list cols = 2 for="Attributes" class = "attributes"
             [rowHeight]="30">
             @for (attribute of attributes; track attribute)
