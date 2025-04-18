@@ -109,11 +109,11 @@
     border: 1px;
     border-color: black;
     border-style: solid;
-    min-width: 40vw;
-    max-width: 40vw;
 }
 .meow {
+    width: 100%;
     display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-areas: 
     'left center right';
 }
@@ -122,14 +122,12 @@
     grid-area: left;
 }
 .centerColumn {
-
-    margin: none;
+    margin-left: auto;
+    margin-top: 4px;
     grid-area: center;
 }
 .rightColumn {
-
-    margin: auto;
-    display: block;
+    margin-right: 12px;
     grid-area: right;
 }
 #wrapper {
