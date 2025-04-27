@@ -45,5 +45,12 @@ export class ExperienceComponent implements OnInit {
     var birth = new Date("1997-08-06");
     this.age = Math.floor((new Date().getTime() - birth.getTime())/(3.154 * (10 ** 10)));
   }
+  onResize(event: any)
+  {
+    this.resize(event.target.innerWidth);
+  }
+  resize(height: number)
+  {
 
+  }
 }

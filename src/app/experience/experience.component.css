@@ -55,8 +55,10 @@
     margin: auto;
     display: grid;
     min-width: 20vw;
+    max-width: 100%;
     float: right;
     margin-top: 4px;
+    word-break: break-all;
 }
 .skills .name {
     text-align: center;
@@ -89,16 +91,19 @@
     display: grid;
     min-width: none;
     max-width: 20vw;
-    min-height: none;
-    max-height: 50vh;
+    min-height: 50%;
+    border: 1px;
+    border-color: aqua;
+    border-style: dashed;
 }
 .attributes .attribute {
-    font-size: large;
+    font-size: auto;
     text-align: center;
+    margin: auto;
     border: 1px;
     border-color: black;
     border-style: solid;
-    margin: auto;
+    word-break: break-all;
 }
 .attributes .value {
     text-align: center;

@@ -1,4 +1,4 @@
-<div class = "cs">
+<div class = "cs"(window:resize)="onResize($event)">
     <div class = "row" style="margin: auto;" id="wrapper">
         <div class="entryleft" id="name">
             <label for="name"><strong>Name: </strong></label><br>
@@ -74,8 +74,7 @@
                 </div>
             </div>
             <br>
-            <mat-grid-list cols = 2 for="Attributes" class = "attributes"
-            [rowHeight]="30">
+            <mat-grid-list cols = 2 for="Attributes" class = "attributes" rowHeight="fit">
             @for (attribute of attributes; track attribute)
             {
                     <mat-grid-tile class = "attribute"><strong>{{attribute.name}}</strong></mat-grid-tile>
