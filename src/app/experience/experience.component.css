@@ -92,9 +92,7 @@
     min-width: none;
     max-width: 20vw;
     min-height: 50%;
-    border: 1px;
-    border-color: aqua;
-    border-style: dashed;
+    z-index: 0;
 }
 .attributes .attribute {
     font-size: auto;

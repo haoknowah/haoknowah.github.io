@@ -23,6 +23,32 @@
     border-color: black;
     border-style: solid;
 }
+.attributes {
+    margin: auto;
+    position: relative;
+    display: grid;
+    min-width: none;
+    max-width: 20vw;
+    min-height: 50vh;
+    border: 1px;
+    border-color: aqua;
+    border-style: dashed;
+    z-index: 0;
+}
+.attributes .attribute {
+    font-size: auto;
+    text-align: center;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    margin: auto;
+    word-break: break-all;
+}
+.attributes .value {
+    text-align: center;
+    margin: auto;
+    max-width: 30px;
+}
 #skills {
     display: table;
     float: right;

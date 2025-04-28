@@ -1,3 +1,8 @@
-<div style = "margin: auto;">
-<label style = "font-size: large;"><strong>Strength</strong></label>
-</div>
+<mat-grid-list cols = 2 for="Attributes" class = "attributes" rowHeight="fit">
+    @for (attribute of attributes; track attribute)
+    {
+            <mat-grid-tile class = "attribute"><strong>{{attribute.name}}</strong></mat-grid-tile>
+            <mat-grid-tile class = "value">{{attribute.value}}</mat-grid-tile>
+    }
+    </mat-grid-list>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
