@@ -99,10 +99,10 @@
 .attributes .attribute {
     font-size: auto;
     text-align: center;
-    margin: auto;
     border: 1px;
     border-color: black;
     border-style: solid;
+    margin: auto;
     word-break: break-all;
 }
 .attributes .value {
