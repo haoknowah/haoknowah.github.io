@@ -40,17 +40,19 @@ export class ExperienceComponent implements OnInit {
   ];
   constructor() { }
   age: number = 0;
+  rowHeight: number = 30;
   ngOnInit(): void {
     this.dataSource.sort((a, b) => a.name.localeCompare(b.name));
     var birth = new Date("1997-08-06");
     this.age = Math.floor((new Date().getTime() - birth.getTime())/(3.154 * (10 ** 10)));
+    this.rowHeight = 30 + (1800 - window.innerWidth)/10;
   }
   onResize(event: any)
   {
     this.resize(event.target.innerWidth);
   }
-  resize(height: number)
+  resize(width: number)
   {
-
+    this.rowHeight = 30 + (1800 - width)/10;
   }
 }

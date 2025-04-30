@@ -65,16 +65,15 @@
             <div class="job">
                 <div class="row">
                     <div class = "entry" style = "margin-left: 0%;">
-                        <label for="job"><strong>Job: </strong></label>
                         <div style = "text-align: center;
-                        margin: auto; margin-left: 5px;">Programmer LVL 3/ Customer Service
+                        margin: auto; margin-left: 5px; font-size: auto;"><strong>Job:  </strong>Programmer LVL 3/ Customer Service
                             Representitive LVL 4
                         </div>
                     </div>
                 </div>
             </div>
             <br>
-            <mat-grid-list cols = 2 for="Attributes" class = "attributes" rowHeight="fit">
+            <mat-grid-list cols = 2 for="Attributes" class = "attributes" rowHeight={{rowHeight}}>
             @for (attribute of attributes; track attribute)
             {
                     <mat-grid-tile class = "attribute"><strong>{{attribute.name}}</strong></mat-grid-tile>

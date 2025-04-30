@@ -91,7 +91,6 @@
     display: grid;
     min-width: none;
     max-width: 20vw;
-    min-height: 50%;
     z-index: 0;
 }
 .attributes .attribute {
