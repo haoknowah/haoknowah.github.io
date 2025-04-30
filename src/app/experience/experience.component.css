@@ -81,6 +81,7 @@
     border-style: solid;
     margin: auto;
     text-align: center;
+    min-width: 75%;
 }
 .job {
     margin: auto;
@@ -111,6 +112,8 @@
     border: 1px;
     border-color: black;
     border-style: solid;
+    margin: auto;
+    min-width: 75%;
 }
 .meow {
     width: 100%;
