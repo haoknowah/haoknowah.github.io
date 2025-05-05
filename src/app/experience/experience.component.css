@@ -58,6 +58,7 @@
     max-width: 100%;
     float: right;
     margin-top: 4px;
+    margin-right: 5vw;
     word-break: break-all;
 }
 .skills .name {
@@ -81,7 +82,8 @@
     border-style: solid;
     margin: auto;
     text-align: center;
-    min-width: 75%;
+    min-width: 50%;
+    max-width: 90%;
 }
 .job {
     margin: auto;
@@ -113,12 +115,14 @@
     border-color: black;
     border-style: solid;
     margin: auto;
-    min-width: 75%;
+    min-width: 50%;
+    max-width: 90%;
 }
 .meow {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 2px;
     grid-template-areas: 
     'left center right';
 }
@@ -127,9 +131,9 @@
     grid-area: left;
 }
 .centerColumn {
-    margin-left: auto;
     margin-top: 4px;
     grid-area: center;
+    text-align: center;
 }
 .rightColumn {
     margin-right: 12px;
